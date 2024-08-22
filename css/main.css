@@ -200,6 +200,7 @@ a {
   margin: 0 auto;
   margin-top: 18px;
   border-radius: 24px;
+  padding: 0 30px;
   background-color: rgb(255, 255, 255);
   box-shadow: 6px 68px 111px rgba(42, 30, 73, 0.2);
 }
@@ -267,13 +268,13 @@ a {
     margin: 0 auto;
     margin-top: 65px;
   }
-  .features-wrapper .features-container .features-container-block {
+  .features-wrapper .features-container {
     padding: 40px 39px;
   }
-  .features-wrapper .features-container .features-container-block .features__title {
+  .features-wrapper .features-container .features__title {
     padding: 24px 0;
   }
-  .features-wrapper .features-container .features-container-block p {
+  .features-wrapper .features-container p {
     max-width: 93%;
   }
   .features-wrapper > div:nth-of-type(2) {
