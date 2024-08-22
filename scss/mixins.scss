@@ -31,11 +31,9 @@
 }
 
 @mixin learnMore {
-  display: flex;
   max-width: 117px;
   height: 22px;
   @include flexSpaceBetween;
-  margin-top: 20px;
   p {
     color: $main-color;
     @include fontEncodeSans(500, 16px, 28.8px);

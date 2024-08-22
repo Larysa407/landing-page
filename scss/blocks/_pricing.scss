@@ -63,6 +63,7 @@
 
   .pricing-block:hover{
     transform: scale(1.14);
+    transition: width 1s, height 1s, transform 1s;
   }
 
   .pricing-block:hover .title{
