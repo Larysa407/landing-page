@@ -2,12 +2,12 @@
   padding-top: 60px;
   max-width: 83%;
   margin: 0 auto;
-  @include flexCenter;
+  display: flex;
+  flex-direction: column;
 
   .features-container {
     max-width: 322px;
     min-height: 236px;
-
     margin: 0 auto;
     margin-top: 18px;
     border-radius: 24px;
@@ -55,7 +55,8 @@
 
 @media (min-width: 1280px) {
   .features-wrapper {
-    display: flex;
+    @include flexSpaceBetween;
+    flex-direction: row;
     max-width: 80%;
     margin: 0 auto;
     margin-top: 65px;
