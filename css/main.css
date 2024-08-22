@@ -191,6 +191,8 @@ a {
   padding-top: 60px;
   max-width: 83%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 .features-wrapper .features-container {
   max-width: 322px;
