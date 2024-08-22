@@ -1,0 +1,125 @@
+.pricing {
+  max-width: 89%;
+  margin: 120px auto 0;
+
+  .pricing-header {
+    margin-bottom: 48px;
+    .title {
+      @include title;
+      padding-bottom: 22px;
+    }
+
+    .main__text {
+      @include mainText;
+    }
+  }
+
+  .pricing-block-content {
+    max-width: 73%;
+    margin: 0 auto;
+    padding-bottom: 46px;
+    text-align: center;
+    
+    .main__text {
+      @include mainText;
+      color: $main-color;
+      padding-bottom: 34px;
+    }
+
+    .title {
+      @include title;
+      color: $main-color;
+    }
+
+    p {
+        @include fontEncodeSans(300, 16px, 28.8px);
+        color: $main-color;
+        padding-bottom: 20px;
+      }
+
+
+    .price {
+      p {
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .pricing-block{
+    padding: 58px 0;
+    margin-bottom: 28px;
+  }
+
+  .btn {
+    @include btn;
+    max-width: 221px;
+    min-height: 42px;
+    @include fontEncodeSans(600, 21px, 31.5px);
+    margin: 0 auto;
+    color: $main-color;
+    border: 1px solid $main-color;
+    background-color: #fff;
+  }
+
+  .pricing-block:hover{
+    transform: scale(1.14);
+  }
+
+  .pricing-block:hover .title{
+    color: $secondary-color;
+  }
+
+  .pricing-block:hover .btn{
+    background-color: $main-color;
+    color: #fff;
+}
+}
+
+@media(min-width: 1280px){
+  .pricing{
+    max-width: 87.9%;
+    margin-top: 60px;
+    .pricing-header{
+      text-align: center;
+
+
+      .main__text {
+        max-width: 539px;
+        margin: 0 auto;
+        padding-top: 18px;
+      }
+    }
+
+    .pricing-blocks{
+      max-width: 79.1%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+
+      .pricing-block-content{
+        max-width: 324px;
+        margin: 0;
+
+        .main__text {
+          @include fontEncodeSans(400, 25px, 45px)
+        }
+    
+        .title {
+          @include fontEncodeSans(600, 40px, 72px)
+        }
+
+        p{
+          @include fontEncodeSans(300, 18px, 32.4px)
+        }
+      }
+    }
+
+    .pricing-blocks > div:nth-of-type(1){
+      order: 1;
+    }
+
+    .pricing-blocks > div:nth-of-type(2){
+      order: 1;
+    }
+  }
+}

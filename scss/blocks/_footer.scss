@@ -1,0 +1,130 @@
+.footer {
+  max-width: 89%;
+  margin: 44px auto 0;
+  .footer-header {
+    @include flexSpaceBetween;
+    padding-bottom: 44px;
+
+    .footer-lang {
+      min-width: 107px;
+      display: flex;
+      @include flexSpaceBetween;
+
+      p {
+        @include fontEncodeSans(500, 16px, 28.8px);
+        color: $main-color;
+      }
+
+      img {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+
+  .footer-apps {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 44px;
+
+    img {
+      min-width: 124px;
+    }
+  }
+
+  .footer-menu {
+    display: flex;
+    justify-content: space-between;
+
+    .footer-nav {
+      max-width: 27%;
+    }
+  }
+  .footer-nav-list {
+    li:first-of-type {
+      @include fontEncodeSans(600, 21px, 31.5px);
+      color: $secondary-color;
+      margin-bottom: 8px;
+    }
+    li {
+      @include fontEncodeSans(500, 16px, 28.8px);
+      color: $main-color;
+      padding-bottom: 7px;
+    }
+  }
+
+  .footer-copyright {
+    padding: 67px 0 57px;
+    p {
+      @include fontEncodeSans(500, 16px, 28.8px);
+      color: $main-color;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1279.98px) {
+  .desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .mobile {
+    display: none;
+  }
+  .footer-container {
+    max-width: 89%;
+    margin: 102px auto;
+    display: flex;
+    justify-content: space-between;
+
+    .footer-block {
+      min-width: 296px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+
+      .footer-logo {
+        padding-bottom: 57px;
+      }
+
+      .footer-apps {
+        max-width: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+
+        img {
+          max-width: 141px;
+          height: 42px;
+        }
+      }
+
+      .footer-copyright {
+        padding: 57px 0 0;
+      }
+    }
+
+    .footer-menu {
+      min-width: 661px;
+
+      .footer-nav {
+        min-width: 489px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .footer-lang{
+        min-width: 116px;
+        display: flex;
+        justify-content: space-between;
+
+        img{
+            width: 15px;
+            height: 15px;
+        }
+      }
+    }
+  }
+}

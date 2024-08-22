@@ -1,0 +1,57 @@
+@mixin fontEncodeSans($weight, $size, $line) {
+  font-family: "Encode Sans";
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin btn {
+  min-width: 144px;
+  height: 32px;
+  color: #fff;
+  text-decoration: none;
+  @include fontEncodeSans(500, 16px, 28.8px);
+  background-color: #843fd0;
+  @include flexCenter;
+  border-radius: 24px;
+  box-shadow: 5px 26px 15px rgba(0, 0, 0, 0.14);
+}
+
+@mixin learnMore {
+  display: flex;
+  max-width: 117px;
+  height: 22px;
+  @include flexSpaceBetween;
+  margin-top: 20px;
+  p {
+    color: $main-color;
+    @include fontEncodeSans(500, 16px, 28.8px);
+  }
+  img {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@mixin title {
+  @include fontEncodeSans(600, 34px, 40.8px);
+  color: $secondary-color;
+}
+
+@mixin mainText {
+  @include fontEncodeSans(300, 20px, 30px);
+  color: $main-color;
+}

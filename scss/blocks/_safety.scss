@@ -1,0 +1,64 @@
+.safety {
+  max-width: 100%;
+  margin-top: 110px;
+
+  .safety-container {
+    max-width: 89%;
+    margin: 0 auto;
+    .safety-container__text {
+      padding-top: 30px;
+      h2 {
+        max-width: 44%;
+        @include fontEncodeSans(600, 34px, 40.8px);
+        color: $main-color;
+        padding-bottom: 30px;
+      }
+
+      .main__text {
+        @include mainText;
+      }
+    }
+
+    .safety-img {
+      min-width: 224px;
+      min-height: 438px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .btn {
+      @include btn;
+      max-width: 186px;
+      height: 40px;
+      margin-top: 40px;
+      background-color: $main-color;
+
+      img {
+        width: 22px;
+        height: 22px;
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+    .safety{
+        margin-top: 160px;
+        .safety-container {
+            max-width: 844px;
+            max-height: 535px;
+            @include flexSpaceBetween;
+            .safety-container__text {
+              max-width: 367px;
+            }
+        
+            .safety-img {
+              img {
+                min-width: 265px;
+                min-height: 535px;
+              }
+            }
+          }
+    }
+}
