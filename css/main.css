@@ -56,7 +56,7 @@ a {
 
 .header {
   max-width: 1440px;
-  background: url(/img/background.png) no-repeat;
+  background: url(./img/background.png) no-repeat;
   background-position-x: 50%;
   background-size: cover;
   color: #fff;
