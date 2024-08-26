@@ -19,11 +19,15 @@
     margin: 0 auto;
     padding-bottom: 46px;
     text-align: center;
-    
+
     .main__text {
       @include mainText;
       color: $main-color;
       padding-bottom: 34px;
+    }
+
+    span {
+      display: none;
     }
 
     .title {
@@ -32,11 +36,10 @@
     }
 
     p {
-        @include fontEncodeSans(300, 16px, 28.8px);
-        color: $main-color;
-        padding-bottom: 20px;
-      }
-
+      @include fontEncodeSans(300, 16px, 28.8px);
+      color: $main-color;
+      padding-bottom: 20px;
+    }
 
     .price {
       p {
@@ -45,7 +48,7 @@
     }
   }
 
-  .pricing-block{
+  .pricing-block {
     padding: 58px 0;
     margin-bottom: 28px;
   }
@@ -61,28 +64,31 @@
     background-color: #fff;
   }
 
-  .pricing-block:hover{
+  .pricing-block:hover {
     transform: scale(1.14);
     transition: width 1s, height 1s, transform 1s;
   }
 
-  .pricing-block:hover .title{
+  .pricing-block:hover .title {
     color: $secondary-color;
   }
 
-  .pricing-block:hover .btn{
+  .pricing-block:hover .btn {
     background-color: $main-color;
     color: #fff;
-}
+  }
+
+  .pricing-block:hover span {
+    display: inline;
+  }
 }
 
-@media(min-width: 1280px){
-  .pricing{
+@media (min-width: 1280px) {
+  .pricing {
     max-width: 87.9%;
     margin-top: 60px;
-    .pricing-header{
+    .pricing-header {
       text-align: center;
-
 
       .main__text {
         max-width: 539px;
@@ -91,35 +97,35 @@
       }
     }
 
-    .pricing-blocks{
+    .pricing-blocks {
       max-width: 79.1%;
       margin: 0 auto;
       display: flex;
       justify-content: space-between;
 
-      .pricing-block-content{
+      .pricing-block-content {
         max-width: 324px;
         margin: 0;
 
         .main__text {
-          @include fontEncodeSans(400, 25px, 45px)
-        }
-    
-        .title {
-          @include fontEncodeSans(600, 40px, 72px)
+          @include fontEncodeSans(400, 25px, 45px);
         }
 
-        p{
-          @include fontEncodeSans(300, 18px, 32.4px)
+        .title {
+          @include fontEncodeSans(600, 40px, 72px);
+        }
+
+        p {
+          @include fontEncodeSans(300, 18px, 32.4px);
         }
       }
     }
 
-    .pricing-blocks > div:nth-of-type(1){
+    .pricing-blocks > div:nth-of-type(1) {
       order: 1;
     }
 
-    .pricing-blocks > div:nth-of-type(2){
+    .pricing-blocks > div:nth-of-type(2) {
       order: 1;
     }
   }

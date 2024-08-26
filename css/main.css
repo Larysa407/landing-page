@@ -278,6 +278,9 @@ a {
   .features-wrapper .features-container p {
     max-width: 87%;
   }
+  .features-wrapper .features-container .learn-more > img {
+    margin: 0;
+  }
   .features-wrapper > div:nth-of-type(2) {
     order: 3;
   }
@@ -518,10 +521,12 @@ a {
   border-radius: 18px;
   background: linear-gradient(rgb(66, 46, 140), rgb(129, 42, 210));
 }
-.reviews-wrapper .reviews-container .reviews-block {
+.reviews-wrapper .reviews-container .reviews-block,
+.reviews-wrapper .reviews-container .active {
   position: relative;
 }
-.reviews-wrapper .reviews-container .reviews-block .reviews-info {
+.reviews-wrapper .reviews-container .reviews-block .reviews-info,
+.reviews-wrapper .reviews-container .active .reviews-info {
   max-width: 89%;
   margin: 0 auto;
   position: absolute;
@@ -531,14 +536,16 @@ a {
   top: -100px;
   left: 20px;
 }
-.reviews-wrapper .reviews-container .reviews-block .reviews-info .reviews-photo {
+.reviews-wrapper .reviews-container .reviews-block .reviews-info .reviews-photo,
+.reviews-wrapper .reviews-container .active .reviews-info .reviews-photo {
   width: 70px;
   height: 70px;
   position: absolute;
   top: -35px;
   left: 24px;
 }
-.reviews-wrapper .reviews-container .reviews-block .reviews-info .reviews-comment {
+.reviews-wrapper .reviews-container .reviews-block .reviews-info .reviews-comment,
+.reviews-wrapper .reviews-container .active .reviews-info .reviews-comment {
   max-width: 87.5%;
   margin: 0 auto;
   font-family: "Encode Sans";
@@ -547,15 +554,18 @@ a {
   font-size: 14px;
   line-height: 25.2px;
   color: #3D2E87;
+  padding-bottom: 58px;
 }
-.reviews-wrapper .reviews-container .reviews-block .reviews-info .reviews-title {
+.reviews-wrapper .reviews-container .reviews-block .reviews-info .reviews-title,
+.reviews-wrapper .reviews-container .active .reviews-info .reviews-title {
   display: flex;
   justify-content: space-between;
   max-width: 87%;
   margin: 0 auto 20px;
   padding-top: 46px;
 }
-.reviews-wrapper .reviews-container .reviews-block .reviews-info .reviews-title .reviews-name h3 {
+.reviews-wrapper .reviews-container .reviews-block .reviews-info .reviews-title .reviews-name h3,
+.reviews-wrapper .reviews-container .active .reviews-info .reviews-title .reviews-name h3 {
   font-family: "Encode Sans";
   font-style: normal;
   font-weight: 600;
@@ -563,7 +573,8 @@ a {
   line-height: 27px;
   color: #3D2E87;
 }
-.reviews-wrapper .reviews-container .reviews-block .reviews-info .reviews-title .reviews-name p {
+.reviews-wrapper .reviews-container .reviews-block .reviews-info .reviews-title .reviews-name p,
+.reviews-wrapper .reviews-container .active .reviews-info .reviews-title .reviews-name p {
   font-family: "Encode Sans";
   font-style: normal;
   font-weight: 700;
@@ -571,12 +582,14 @@ a {
   line-height: 21px;
   color: #3D2E87;
 }
-.reviews-wrapper .reviews-container .reviews-block .reviews-info .reviews-title .reviews-rate {
+.reviews-wrapper .reviews-container .reviews-block .reviews-info .reviews-title .reviews-rate,
+.reviews-wrapper .reviews-container .active .reviews-info .reviews-title .reviews-rate {
   min-width: 107px;
   display: flex;
   justify-content: space-between;
 }
-.reviews-wrapper .reviews-container .reviews-block .reviews-info .reviews-title .reviews-rate img {
+.reviews-wrapper .reviews-container .reviews-block .reviews-info .reviews-title .reviews-rate img,
+.reviews-wrapper .reviews-container .active .reviews-info .reviews-title .reviews-rate img {
   width: 15px;
   height: 14.25px;
 }
@@ -691,6 +704,9 @@ a {
   color: #3D2E87;
   padding-bottom: 34px;
 }
+.pricing .pricing-block-content span {
+  display: none;
+}
 .pricing .pricing-block-content .title {
   font-family: "Encode Sans";
   font-style: normal;
@@ -754,6 +770,9 @@ a {
 .pricing .pricing-block:hover .btn {
   background-color: #3D2E87;
   color: #fff;
+}
+.pricing .pricing-block:hover span {
+  display: inline;
 }
 
 @media (min-width: 1280px) {

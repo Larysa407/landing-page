@@ -44,7 +44,8 @@
       background: linear-gradient(rgba(66, 46, 140, 1), rgba(129, 42, 210, 1));
     }
 
-    .reviews-block {
+    .reviews-block,
+    .active {
       position: relative;
 
       .reviews-info {
@@ -70,6 +71,7 @@
           margin: 0 auto;
           @include fontEncodeSans(500, 14px, 25.2px);
           color: $main-color;
+          padding-bottom: 58px;
         }
 
         .reviews-title {
